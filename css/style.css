@@ -20,20 +20,36 @@ button {
 }
 
 .main-body h1 {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .navigator select {
-    margin-top: 20px;
+    margin-top: 5px;
     box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
     border-radius: 5px;
     padding: 2.5px 10px;
     background-color: white;
-    font-size: 20px;
+    font-size: 12px;
 }
 
 #nav2 {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+}
+
+.next-link {
+    font-size: 12px;
+    margin: 0 20px;
+    user-select: none;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.next-link:hover {
+    text-decoration: none;
+}
+
+.next-link:active {
+    text-decoration: underline;
 }
 
 .photos-container {
@@ -49,7 +65,7 @@ button {
 }
 
 .image-post {
-    margin: 20px 0px 0px 0px;
+    margin: 10px 0px 0px 0px;
     box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
     border-radius: 5px;
     padding: 5px;
@@ -66,7 +82,7 @@ button {
 .action-buttons button {
     box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
     border-radius: 5px;
-    padding: 5px 15px;
+    padding: 2px 5px;
     background-color: white;
-    font-size: 30px;
+    font-size: 12px;
 }
