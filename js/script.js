@@ -14,7 +14,6 @@ $.ajax({
         renred_nav(data);
 
         var value = localStorage.getItem("range");
-        console.log(value);
         if (value) {
             var range = value.split("_");
             var start = Number(range[0]);
