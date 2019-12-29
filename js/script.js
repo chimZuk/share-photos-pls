@@ -9,7 +9,6 @@ var data = {};
 $.ajax({
     url: "/library/washington_dc/map.json",
     success: function (map) {
-        console.log(map);
         data = map;
         renred_nav(data);
         render(1, 10);
@@ -17,11 +16,8 @@ $.ajax({
 });
 
 function renred_nav(data = data) {
-    console.log(data);
     var amount = Number(data.number);
-    console.log(amount);
     var number = Math.floor(amount / 10) + 1;
-    console.log(number);
 
     var nav = ``;
     var nav1_el = `<select id="nav1_selector" onchange="pre_render(this);">`;
