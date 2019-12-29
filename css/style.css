@@ -9,3 +9,61 @@ img {
     user-select: none;
     cursor: pointer;
 }
+
+.main-body {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+}
+
+.main-body h1 {
+    margin-top: 20px;
+}
+
+.navigator select {
+    margin-top: 20px;
+    box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
+    border-radius: 5px;
+    padding: 2.5px 10px;
+    background-color: white;
+    font-size: 20px;
+}
+
+#nav2 {
+    margin-bottom: 20px;
+}
+
+.photos-container {
+    width: 100%;
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.photos-container img {
+    width: 100%;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.image-post {
+    margin: 20px 0px 0px 0px;
+    box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.action-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.action-buttons button {
+    box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
+    border-radius: 5px;
+    padding: 5px 15px;
+    background-color: white;
+    font-size: 30px;
+}
