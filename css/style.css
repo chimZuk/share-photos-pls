@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Solway&display=swap');
+
+* {
+    margin: 0px;
+    font-family: 'Solway', serif;
+}
+
+img {
+    user-select: none;
+    cursor: pointer;
+}
