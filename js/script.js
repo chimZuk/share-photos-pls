@@ -1,9 +1,10 @@
 var socket = io();
 
-socket.on('downloaded', function (msg) {
-    console.log(msg);
-});
-
 function download(url) {
-    socket.emit('download', url);
+    var name = "kek";
+    var uri = "/library/washington_dc/shrinked/0001.jpg";
+    var link = document.createElement("a");
+    link.download = name;
+    link.href = uri;
+    link.click();
 }
