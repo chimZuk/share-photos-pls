@@ -63,9 +63,7 @@ function render(start, end) {
             `<div class="image-post">
                 <img src="/library/washington_dc/shrinked/` + name + `.jpg">
                 <div class="action-buttons">
-                    <button>💔</button>
                     <button onclick="download('/library/washington_dc/reg/` + name + `.jpg', '` + name + `.jpg')">Download 🤑</button>
-                    <button>❤️</button>
                 </div>
             </div>`
         )
