@@ -3,9 +3,8 @@ var app = express();
 var pre_http = require('http');
 var http = pre_http.createServer(app);
 var io = require('socket.io')(http);
-var fs = require('fs');
 
-var photos_library = 'E:/photo_library';
+var photos_library = '/media/pi/Drive/photo_library';
 app.use('/', express.static(__dirname + '/'));
 app.use('/library', express.static(photos_library + '/'));
 
@@ -19,6 +18,6 @@ io.on('connection', function (socket) {
     });
 });
 
-http.listen(80, function () {
-    console.log('listening on *:3000');
+http.listen(8080, function () {
+    console.log('Listening on the port 80.');
 });

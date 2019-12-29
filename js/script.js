@@ -62,13 +62,20 @@ function render(start, end) {
         photos.append(
             `<div class="image-post">
                 <img src="/library/washington_dc/shrinked/` + name + `.jpg">
+                <h2 style="margin: 5px;">` + name + `.jpg</h2>
                 <div class="action-buttons">
-                    <button onclick="download('/library/washington_dc/reg/` + name + `.jpg', '` + name + `.jpg')">Download 🤑</button>
+                    <button onclick="download_iphone('/library/washington_dc/reg/` + name + `.jpg', '` + name + `.jpg')">Download for iPhone 🍎💩</button>
+                    <button onclick="download('/library/washington_dc/reg/` + name + `.jpg', '` + name + `.jpg')">Regular Download 🤑</button>
                 </div>
             </div>`
         )
     }
 
+}
+
+function download_iphone(uri, name) {
+    var win = window.open(uri, '_blank');
+    win.focus();
 }
 
 function download(uri, name) {
