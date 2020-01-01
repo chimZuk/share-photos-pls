@@ -1,8 +1,32 @@
-var express = require('express');
-var app = express();
-var pre_http = require('http');
-var http = pre_http.createServer(app);
-var io = require('socket.io')(http);
+'use strict';
+
+const express = require('express');
+const app = express();
+const pre_http = require('http');
+const http = pre_http.createServer(app);
+const io = require('socket.io')(http);
+const API = require('./server/api');
+
+
+
+
+API.readDialog("Lol");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 var photos_library = '/media/pi/Drive/photo_library';
 app.use('/', express.static(__dirname + '/'));
