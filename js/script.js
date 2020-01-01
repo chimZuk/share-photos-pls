@@ -8,7 +8,7 @@ var data = {};
 var current_range = "1_10";
 
 $.ajax({
-    url: "/library/washington_dc/map.json",
+    url: "/library/us_nye_2020/map.json",
     success: function (map) {
         data = map;
         renred_nav(data);
@@ -108,11 +108,11 @@ function render(start, end) {
 
         photos.append(
             `<div class="image-post">
-                <img src="/library/washington_dc/shrinked/` + name + `.jpg">
+                <img src="/library/us_nye_2020/shrinked/` + name + `.jpg">
                 <h4 style="margin: 5px;">` + name + `.jpg</h4>
                 <div class="action-buttons">
-                    <button onclick="download_iphone('/library/washington_dc/reg/` + name + `.jpg', '` + name + `.jpg')">Download for iPhone 🍎💩</button>
-                    <button onclick="download('/library/washington_dc/reg/` + name + `.jpg', '` + name + `.jpg')">Regular Download 🤑</button>
+                    <button onclick="download_iphone('/library/us_nye_2020/reg/` + name + `.jpg', '` + name + `.jpg')">Download for iPhone 🍎💩</button>
+                    <button onclick="download('/library/us_nye_2020/reg/` + name + `.jpg', '` + name + `.jpg')">Regular Download 🤑</button>
                 </div>
             </div>`
         )
