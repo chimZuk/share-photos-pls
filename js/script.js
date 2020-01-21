@@ -8,7 +8,7 @@ var data = {};
 var current_range = "1_10";
 
 $.ajax({
-    url: "/library/wedding/map.json",
+    url: "/library/2020_01_us_wedding/map.json",
     success: function (map) {
         data = map;
         renred_nav(data);

@@ -1,0 +1,24 @@
+{
+  "name": "share-photos-pls",
+  "version": "1.0.0",
+  "description": "Simple pictures sharing application for your personal server. Runs perfectly on Raspberry Pi!  [Demo is avaliable here.](http://photos.chimZuk.com/)",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chimZuk/share-photos-pls.git"
+  },
+  "author": "chimZuk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chimZuk/share-photos-pls/issues"
+  },
+  "homepage": "https://github.com/chimZuk/share-photos-pls#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0"
+  }
+}
